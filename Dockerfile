@@ -3,7 +3,7 @@
 # WORKDIR /home/gradle/src
 # RUN gradle bootJar --no-daemon
 
-FROM openjdk:20-bullseye
+FROM openjdk:8u181-jdk-alpine
 
 WORKDIR /app
 COPY /build/libs/*.war /app/application.war
