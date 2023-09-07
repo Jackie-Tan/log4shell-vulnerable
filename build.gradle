@@ -24,10 +24,5 @@ dependencies {
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	implementation 'javax.servlet:jstl'
 	implementation 'org.springframework.boot:spring-boot-starter-tomcat'
-	implementation ('org.springframework.boot:spring-boot-starter-log4j2:2.6.1') {
-        	exclude group: 'org.apache.logging.log4j', module: 'log4j-core'
-        	exclude group: 'org.apache.logging.log4j', module: 'log4j-api'
-    	}
-    	implementation 'org.apache.logging.log4j:log4j-core:2.17.1' // updated to 2.17.1
-    	implementation 'org.apache.logging.log4j:log4j-api:2.17.1' // updated to 2.17.1
+	implementation 'org.springframework.boot:spring-boot-starter-log4j2:2.6.1'
 }
